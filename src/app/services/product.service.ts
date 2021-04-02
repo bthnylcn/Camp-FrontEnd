@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http'; //apiye bağlanabilmek backende istekte bulunabilmek için
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ListResponseModel } from '../models/listResponseModel';
 import { Product } from '../models/product';

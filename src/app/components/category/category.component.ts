@@ -15,6 +15,7 @@ export class CategoryComponent implements OnInit {
   ngOnInit(): void {
     this.getCategories();
   }
+
   getCategories() {
     this.categoryService.getCategories().subscribe((response) => {
       this.categories = response.data;
@@ -23,6 +24,7 @@ export class CategoryComponent implements OnInit {
   setCurrentCategory(category: Category) {
     this.currentCategory = category;
   }
+
   getCurrentCategoryClass(category: Category) {
     if (category == this.currentCategory) {
       return 'list-group-item active';
@@ -30,6 +32,7 @@ export class CategoryComponent implements OnInit {
       return 'list-group-item';
     }
   }
+
   getAllCategoryClass() {
     if (!this.currentCategory) {
       return 'list-group-item active';
